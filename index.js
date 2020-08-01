@@ -1,7 +1,16 @@
-function takeANumber(line,name){ //take a number accepts customers position in line and name of customer.
- line.push(`${name}`);// .push, pushes customers name to end of line string
- return(`Welcome, ${name}. You are number ${line.length} in line.`);
-}// "returning" full message using return command and interpolation of name and position in line/length of line.
+// function takeANumber(line,name){ //take a number accepts customers position in line and name of customer.
+// line.push(`${name}`);// .push, pushes customers name to end of line string
+// return(`Welcome, ${name}. You are number ${line.length} in line.`);
+// }// "returning" full message using return command and interpolation of name and position in line/length of line.
+function takeANumber(katzDeliLine){
+let x = 0; 
+x++;
+katzDeliLine.push(x);
+return `Welcome your are number ${x}.`;
+}
+
+
+
 
 function nowServing(katzDeliLine){//now serving accepts deli line/ use a whileLoop to check the length of the line as it fills before relaying a message
   let x = 0;
